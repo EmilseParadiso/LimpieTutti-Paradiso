@@ -7,11 +7,13 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from './CartWidget';
 
 
 const NavBar =() => {
   return <>
   <Navbar bg="light" expand="lg">
+  <CartWidget/>
   <Navbar.Brand href="#home">Limpie Tutti</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
@@ -23,10 +25,13 @@ const NavBar =() => {
         <NavDropdown.Item href="#action/3.3">Adornos y algo más</NavDropdown.Item>
         <NavDropdown.Divider />
       </NavDropdown>
+     
     </Nav>
     <Form inline>
+    
       <FormControl type="text" placeholder="Busca lo que necesites" className="mr-sm-2" />
       <Button variant="outline-success">Buscar</Button>
+      
     </Form>
   </Navbar.Collapse>
 </Navbar>
