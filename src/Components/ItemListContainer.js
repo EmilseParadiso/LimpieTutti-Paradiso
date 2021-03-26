@@ -1,5 +1,13 @@
 import React, { useState } from "react";
+import ItemCount from "./ItemCount"
 
  
-const Greeting =  props => <h1>{props.greeting}</h1>;
+const Greeting = () => {
+    return <> 
+<ItemCount int ="0" min= "0"
+max="10" onAdd={() =>console.log()}/>
+</>
+};
+
 export default Greeting ;
+ 
